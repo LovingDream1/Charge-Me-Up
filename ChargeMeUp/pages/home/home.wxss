@@ -29,8 +29,8 @@ box-sizing: border-box;
 }
 
 .grid-item image {
-  width: 150rpx;
-  height: 150rpx;
+  width: 120rpx;
+  height: 120rpx;
 }
 
 .grid-item text{
