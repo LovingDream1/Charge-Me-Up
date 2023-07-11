@@ -1,1 +1,14 @@
 /* pages/personal/personal.wxss */
+.img-box{
+  display: flex;
+  padding: 20rpx 10rpx;
+  justify-content: space-around;
+}
+.picture{
+  height:120rpx;
+  width:120rpx;
+}
+.picture image{
+  height:120rpx;
+  width:120rpx;
+}
