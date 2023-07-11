@@ -7,16 +7,28 @@
 }
 
 .title {
-  margin-top: 10rpx;
-  width: 30%;
-  height: 60rpx;
+  height: 80rpx;
+  align-items: center;
+}
+
+.title image {
+  margin-left: 15rpx;
+  margin-top: 20rpx;
+  width: 3%;
+  height: 50rpx;
+}
+
+.title text {
+  margin-left: 10rpx;
+  font-size: x-large;
+  font-family: "隶书";
 }
 
 .list-grid {
   margin-top: 10rpx;
   display: flex;
   border: 20rpx solid #efefef;
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .grid-item {
@@ -33,7 +45,28 @@ box-sizing: border-box;
   height: 120rpx;
 }
 
-.grid-item text{
+.grid-item text {
   font-size: large;
   margin-top: 10rpx;
+  font-family: "隶书";
+}
+
+.charged {
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  border: 5rpx solid #efefef;
+}
+
+.time {
+  width: 80%;
+
+}
+
+.time image {
+  margin-top: 20rpx;
+  width: 80%;
+  height: 70rpx;
+  display: flex;
 }

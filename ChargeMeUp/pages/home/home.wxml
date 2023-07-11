@@ -3,9 +3,12 @@
 <image class="logo" src="/images/图标.jpg"></image>
 
 <!-- 快速导航 -->
-<view>
-  <image class="title" src="/images/功能速览.png"></image>
+<view class="title">
+  <image src="/images/分页符.png"></image>
+  <text>功能速览</text>
+</view>
 
+<view>
   <view class="list-grid">
     <view class="grid-item">
       <image src="/images/icon/扫码充电.png"></image>
@@ -23,10 +26,20 @@
 </view>
 
 <!-- 充电状态 -->
+<view class="title">
+  <image class="title" src="/images/分页符.png"></image>
+  <text class="title-word">充电状态</text>
+</view>
 <view>
-  <image class="title" src="/images/充电状态.png"></image>
-  <view>
-  
+  <view class="charged">
+    <view class="time">
+    <image src="/images/剩余充电时间.png"></image>
+    <text>暂时占位</text>
+    </view>
+    <view class="location">
+    <image src="/images/充电桩位置.png"></image>
+    <text>暂时占位</text>
+    </view>
+
   </view>
 </view>
-
