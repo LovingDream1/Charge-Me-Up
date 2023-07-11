@@ -1,4 +1,6 @@
 /* pages/home/home.wxss */
+page{background-color: #ececec
+}
 .logo {
   margin-left: 15rpx;
   margin-right: 15rpx;
@@ -7,8 +9,9 @@
 }
 
 .title {
-  margin-left: 10rpx;
-  width: 98%;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  width: 95%;
   height: 70rpx;
   display: flex;
   flex-direction: row;
