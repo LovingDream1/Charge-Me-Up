@@ -1,4 +1,32 @@
 <!--pages/home/home.wxml-->
+<!-- 图标 -->
 <image class="logo" src="/images/图标.jpg"></image>
-<image class="title" src="/images/分页符.png">
-</image>
+
+<!-- 快速导航 -->
+<view>
+  <image class="title" src="/images/功能速览.png"></image>
+
+  <view class="list-grid">
+    <view class="grid-item">
+      <image src="/images/icon/扫码充电.png"></image>
+      <text>扫码充电</text>
+    </view>
+    <view class="grid-item">
+      <image src="/images/icon/找充电桩.png"></image>
+      <text>找充电桩</text>
+    </view>
+    <view class="grid-item">
+      <image src="/images/icon/账户.png"></image>
+      <text>个人账户</text>
+    </view>
+  </view>
+</view>
+
+<!-- 充电状态 -->
+<view>
+  <image class="title" src="/images/充电状态.png"></image>
+  <view>
+  
+  </view>
+</view>
+
