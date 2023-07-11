@@ -7,7 +7,10 @@
 }
 
 .title {
+  width: 35%;
   height: 80rpx;
+  display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -20,6 +23,7 @@
 
 .title text {
   margin-left: 10rpx;
+  margin-top: 20rpx;
   font-size: x-large;
   font-family: "隶书";
 }
@@ -41,6 +45,7 @@
 }
 
 .grid-item image {
+  margin-top: 10rpx;
   width: 120rpx;
   height: 120rpx;
 }
@@ -59,14 +64,23 @@
   border: 5rpx solid #efefef;
 }
 
-.time {
+.title2 {
   width: 80%;
-
-}
-
-.time image {
-  margin-top: 20rpx;
-  width: 80%;
-  height: 70rpx;
   display: flex;
+  align-items: center;
 }
+
+.title2 image {
+  margin-top: 40rpx;
+  margin-left: 60rpx;
+  width:70rpx;
+  height: 70rpx;
+}
+
+.title2 text {
+  margin-top: 40rpx;
+  margin-left: 20rpx;
+  font-size: 60rpx;
+  font-family: "华文新魏";
+}
+

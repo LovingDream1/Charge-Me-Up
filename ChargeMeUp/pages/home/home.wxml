@@ -32,14 +32,22 @@
 </view>
 <view>
   <view class="charged">
-    <view class="time">
-    <image src="/images/剩余充电时间.png"></image>
-    <text>暂时占位</text>
-    </view>
-    <view class="location">
-    <image src="/images/充电桩位置.png"></image>
-    <text>暂时占位</text>
+    <view class="title2">
+      <image src="/images/时间.png"></image>
+      <text>剩余充电时间</text>
     </view>
 
+    <view>
+      **********
+    </view>
+
+    <view class="title2">
+      <image src="/images/位置.png"></image>
+      <text>充电桩位置</text>
+    </view>
+
+    <view>
+      **********
+    </view>
   </view>
 </view>
