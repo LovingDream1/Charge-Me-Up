@@ -1,2 +1,4 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<image class="logo" src="/images/图标.jpg"></image>
+<image class="title" src="/images/分页符.png">
+</image>

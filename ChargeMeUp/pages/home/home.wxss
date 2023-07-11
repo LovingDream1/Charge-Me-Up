@@ -1,1 +1,12 @@
 /* pages/home/home.wxss */
+.logo {
+  width: 100%;
+  height: 250rpx;
+}
+.title {
+  display: flex;
+width: 20rpx;
+height: 60rpx;
+
+}
+
