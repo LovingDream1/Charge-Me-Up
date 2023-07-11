@@ -30,6 +30,7 @@
   <image class="title" src="/images/分页符.png"></image>
   <text class="title-word">充电状态</text>
 </view>
+
 <view>
   <view class="charged">
     <view class="title2">
@@ -37,17 +38,30 @@
       <text>剩余充电时间</text>
     </view>
 
-    <view>
-      **********
+    <view class="countdown">
+      <view class="item">
+        <view class="txt-time">{{txtTime.hou}}</view>
+        <text class="units">h</text>
+        <view class="txt-time">{{txtTime.min}}</view>
+        <text class="units">min</text>
+      </view>
     </view>
+
 
     <view class="title2">
       <image src="/images/位置.png"></image>
       <text>充电桩位置</text>
     </view>
 
-    <view>
-      **********
+    <view class="location">
+      <view class="item">
+        <view class="info">天赐庄本部</view>
+        <text class="num">1</text>
+        <view class="info">号桩</view>
+        <text class="num">1</text>
+        <view class="info">号充电位</view>
+      </view>
     </view>
   </view>
+  <text class="tip">您的爱车正在重新续航，请耐心等待~</text>
 </view>
