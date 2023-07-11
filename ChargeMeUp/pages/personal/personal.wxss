@@ -1,14 +1,39 @@
 /* pages/personal/personal.wxss */
-.img-box{
+
+.img-box {
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  width: 97.5%;
+  margin-top: 10rpx;
   display: flex;
-  padding: 20rpx 10rpx;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  border-left: 10rpx solid #efefef;
+  border-bottom: 10rpx solid #efefef;
+  box-sizing: border-box;
+  background-color: rgb(240, 252, 217);
 }
-.picture{
-  height:120rpx;
-  width:120rpx;
+
+.box-item {
+  border-top: 10rpx solid #efefef;
+  border-right: 10rpx solid #efefef;
+  box-sizing: border-box;
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
-.picture image{
-  height:120rpx;
-  width:120rpx;
+
+.box-item image {
+  margin-top: 10rpx;
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.box-item text {
+  font-size: large;
+  margin-top: 10rpx;
+  font-family: "隶书";
 }

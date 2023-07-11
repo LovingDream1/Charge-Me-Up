@@ -1,29 +1,30 @@
 <!--pages/personal/personal.wxml-->
 <view class="img-box">
-<view class="picture">
-  <image src='/images/icon/账户充值.png' ></image>
-  <view class="text"><text>账户充值</text></view> 
+  <navigator class="box-item" url="/pages/tmp/tmp?title={{name1}}">
+    <image src='/images/icon/账户充值.png'></image>
+    <text>账户充值</text>
+  </navigator>
+  <navigator class="box-item" url="/pages/tmp/tmp?title={{name2}}">
+    <image src='/images/icon/充值记录.png' ></image>
+    <text>充值记录</text>
+  </navigator>
+  <navigator class="box-item" url="/pages/tmp/tmp?title={{name3}}">
+    <image src='/images/icon/订单查询.png'></image>
+    <text>订单查询</text>
+  </navigator>
 </view>
-<view class="picture">
-  <image src='/images/icon/充值记录.png' ></image>
-  <view class="text"><text>充值记录</text></view> 
-</view>
-<view class="picture">
-  <image src='/images/icon/订单查询.png' ></image>
-  <view class="text"><text>订单查询</text></view> 
-</view>
-</view>
+
 <view class="img-box">
-<view class="picture">
-  <image src='/images/icon/邀请注册.png' ></image>
-  <view class="text"><text>邀请注册</text></view> 
-</view>
-<view class="picture">
-  <image src='/images/icon/桩位收藏.png' ></image>
-  <view class="text"><text>桩位收藏</text></view> 
-</view>
-<view class="picture">
-  <image src='/images/icon/意见反馈.png' ></image>
-  <view class="text"><text>意见反馈</text></view> 
-</view>
+  <navigator class="box-item" url="/pages/tmp/tmp?title={{name4}}">
+    <image src='/images/icon/邀请注册.png'></image>
+    <text>邀请注册</text>
+  </navigator>
+  <navigator class="box-item" url="/pages/tmp/tmp?title={{name5}}">
+    <image src='/images/icon/桩位收藏.png'></image>
+    <text>桩位收藏</text>
+  </navigator>
+  <navigator class="box-item" url="/pages/tmp/tmp?title={{name6}}">
+    <image src='/images/icon/意见反馈.png'></image>
+    <text>意见反馈</text>
+  </navigator>
 </view>
