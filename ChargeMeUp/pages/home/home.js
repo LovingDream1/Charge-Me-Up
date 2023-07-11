@@ -1,11 +1,13 @@
 // pages/home/home.js
 Page({
-  
+
   /**
    * 页面的初始数据
    */
   data: {
-    endTime: "2023-07-12 10:30:00" //结束时间
+    endTime: "2023-07-12 10:30:00", //结束时间
+    name1: "找充电桩",
+    name2: "个人账户"
   },
 
   /**
@@ -97,4 +99,19 @@ Page({
       txtTime: obj,
     })
   },
+  getScancode: function () {
+
+    var _this = this;
+    // 允许从相机和相册扫码
+    wx.scanCode({
+      success: (res) => {
+        var SampleBarcode = res.result;
+
+        _this.setData({
+          SampleBarcode: SampleBarcode,
+
+        })
+      }
+    })
+  }
 })

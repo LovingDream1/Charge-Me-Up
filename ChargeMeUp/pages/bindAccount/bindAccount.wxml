@@ -1,0 +1,13 @@
+<!--pages/bindAccount/bindAccount.wxml-->
+<view class="form-here">
+
+  <input class="form-account" placeholder="请输入学生姓名" bindinput="inputname"/>
+  <view class="hr"></view>
+
+  <input class="form-password" placeholder="请输入学号" bindinput="inputid"/>
+  <view class="hr" style="margin-top:5px;"></view>
+
+</view>
+<view class="submit">
+  <button class="sub-button" bindtap="confirmInfo">确认绑定</button>
+</view>

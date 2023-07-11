@@ -3,5 +3,18 @@
   "projectname": "ChargeMeUp",
   "setting": {
     "compileHotReLoad": true
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "账号绑定",
+          "pathName": "pages/bindAccount/bindAccount",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
   }
 }

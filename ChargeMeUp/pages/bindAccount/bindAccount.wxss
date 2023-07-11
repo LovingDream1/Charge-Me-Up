@@ -1,0 +1,26 @@
+/* pages/bindAccount/bindAccount.wxss */
+/*form  */
+
+.form-here {
+  margin-top: 10px;
+  background-color: #ffffff;
+  padding: 20px 30px;
+}
+
+.form-password {
+  margin-top: 20px;
+}
+
+.submit {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+}
+
+.sub-button {
+  background-color: #0398e7;
+  color: #ffffff;
+  line-height: 1.8;
+  border-radius: 30px;
+}

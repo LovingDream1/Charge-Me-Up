@@ -10,18 +10,18 @@
 
 <view>
   <view class="list-grid">
-    <view class="grid-item">
+    <view class="grid-item" bindtap="getScancode">
       <image src="/images/icon/扫码充电.png"></image>
       <text>扫码充电</text>
     </view>
-    <view class="grid-item">
+    <navigator class="grid-item" url="/pages/tmp/tmp?title={{name1}}" >
       <image src="/images/icon/找充电桩.png"></image>
       <text>找充电桩</text>
-    </view>
-    <view class="grid-item">
+    </navigator>
+    <navigator class="grid-item" url="/pages/bindAccount/bindAccount?title={{name2}}">
       <image src="/images/icon/账户.png"></image>
       <text>个人账户</text>
-    </view>
+    </navigator>
   </view>
 </view>
 
