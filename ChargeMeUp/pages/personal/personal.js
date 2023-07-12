@@ -4,14 +4,15 @@ Page({
   /**
    * 页面的初始数据
    */
-  data: 
-  {
-    name1:"账户充值",
-    name2:"充值记录",
-    name3:"订单查询",
-    name4:"邀请注册",
-    name5:"桩位收藏",
-    name6:"意见反馈"
+  data: {
+    name1: "账户充值",
+    name2: "充值记录",
+    name3: "订单查询",
+    name4: "邀请注册",
+    name5: "桩位收藏",
+    name6: "意见反馈",
+    username: getApp().globalData.username,
+    id: getApp().globalData.id
   },
 
   /**
@@ -19,6 +20,10 @@ Page({
    */
   onLoad(options) {
 
+    this.setData({
+      username: getApp().globalData.username,
+      id: getApp().globalData.id
+    })
   },
 
   /**
@@ -32,7 +37,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
+    
   },
 
   /**

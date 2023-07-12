@@ -6,18 +6,20 @@ Page({
    */
   data: {
     query: [],
-    username: [],
-    id: [],
+    username: '',
+    id: '',
   },
+
   inputname(e) {
     this.setData({
-      username: e
+      username: e.detail.value
     })
+
   },
 
   inputid(e) {
     this.setData({
-      id: e
+      id: e.detail.value
     })
   },
 
@@ -60,6 +62,9 @@ Page({
     //   }
     // })
     else {
+      getApp().globalData.username = this.data.username;
+      getApp().globalData.id = this.data.id;
+      console.log(getApp().globalData.username);
       wx.showToast({
         title: '绑定成功',
         icon: 'success',

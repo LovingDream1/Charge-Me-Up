@@ -1,31 +1,41 @@
-// pages/tmp/tmp.js
+// pages/charging/charging.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    query: []
+    time: 0,
+    location1: 1 + Math.floor(Math.random() * 9),
+    location2: 1 + Math.floor(Math.random() * 40),
+    flag: ''
   },
 
-  
+  chargingtime(e) {
+    console.log(e);
+    getApp().globalData.loc1 = this.data.location1;
+    getApp().globalData.loc2 = this.data.location2;
+    getApp().globalData.time = e.currentTarget.dataset.time;
 
+    wx.reLaunch({
+      url: '/pages/home/home?flag=1',
+      success: () => {
+        console.log("成功");
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    this.setData({
-      query: options
-    })
+
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady() {
-    wx.setNavigationBarTitle({
-      title: this.data.query.title,
-    })
+
   },
 
   /**

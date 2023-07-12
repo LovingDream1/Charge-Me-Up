@@ -4,24 +4,28 @@ page{background-color: #ececec
 .logo {
   margin-left: 15rpx;
   margin-right: 15rpx;
+  margin-top: 20rpx;
   width: 96%;
   height: 250rpx;
+  border-radius: 26px;
 }
 
 .title {
   margin-left: 20rpx;
   margin-right: 20rpx;
+  margin-top: 20rpx;
   width: 95%;
   height: 70rpx;
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: honeydew;
+  background-color: rgb(253, 253, 253);
 }
 
 .title image {
   margin-left: 15rpx;
   margin-top: 20rpx;
+  margin-bottom: 20rpx;
   width: 3%;
   height: 50rpx;
 }
@@ -29,9 +33,10 @@ page{background-color: #ececec
 .title text {
   margin-left: 10rpx;
   margin-top: 15rpx;
+  margin-bottom: 10rpx;
   font-size: x-large;
   font-family: "隶书";
-  background-color: honeydew;
+  background-color: rgb(255, 255, 255);
 }
 
 .list-grid {
@@ -57,20 +62,22 @@ page{background-color: #ececec
 }
 
 .grid-item image {
-  margin-top: 10rpx;
-  width: 120rpx;
-  height: 120rpx;
+  margin-top: 30rpx;
+  width: 100rpx;
+  height: 100rpx;
 }
 
 .grid-item text {
   font-size: large;
-  margin-top: 10rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
   font-family: "隶书";
 }
 
+
 .charged {
   margin-top: 10rpx;
-  margin-bottom: 10rpx;
+  margin-bottom: 20rpx;
   margin-left: 10rpx;
   margin-right: 10rpx;
   border: 10rpx solid #efefef;
@@ -84,16 +91,17 @@ page{background-color: #ececec
 }
 
 .title2 image {
-  margin-top: 40rpx;
-  margin-left: 60rpx;
-  width: 60rpx;
-  height: 60rpx;
+  margin-top: 20rpx;
+  margin-left: 40rpx;
+  width: 40rpx;
+  height: 40rpx;
 }
 
 .title2 text {
   margin-top: 40rpx;
+  margin-bottom: 10rpx;
   margin-left: 20rpx;
-  font-size: 60rpx;
+  font-size: 50rpx;
   font-family: "华文新魏";
 }
 
@@ -116,14 +124,14 @@ page{background-color: #ececec
   font-weight: bold;
   height: 60rpx;
   width: 100rpx;
-  line-height: 42rpx;
+  line-height: 56rpx;
   text-align: center;
 }
 
 .countdown .item .units {
   margin-left: 10rpx;
   margin-right: 10rpx;
-  font-size: 40rpx;
+  font-size: 30rpx;
   font-family: "Showcard Gothic";
 }
 
@@ -147,7 +155,7 @@ page{background-color: #ececec
   font-weight: bold;
   height: 60rpx;
   width: 60rpx;
-  line-height: 42rpx;
+  line-height: 54rpx;
   text-align: center;
 }
 
