@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    endTime: "2023-07-12 16:40:00", //结束时间
+    endTime: "2023-07-12 16:50:00", //结束时间
     name1: "找充电桩",
     name2: "个人账户",
     loc1: getApp().globalData.loc1,

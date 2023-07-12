@@ -5,7 +5,44 @@ Page({
    * 页面的初始数据
    */
   data: {
-    query: []
+    query: [],
+    remainTime: 60 * 60, // 剩余时间，默认1小时即3600秒
+    timer: null,
+    showTime: '1:0:0' // 显示的倒计时，初始为1小时
+  },
+
+  countDown: function () {
+    let that = this;
+    let remainTime = that.data.remainTime;
+
+    that.data.timer = setInterval(function () {
+      remainTime--;
+      let hour = parseInt(remainTime / 3600);
+      let min = parseInt((remainTime - hour * 3600) / 60);
+      let sec = remainTime - hour * 3600 - min * 60;
+
+      // 格式化显示的时间
+      let showHour = hour < 10 ? '0' + hour : hour;
+      let showMin = min < 10 ? '0' + min : min;
+      let showSec = sec < 10 ? '0' + sec : sec;
+
+      that.setData({
+        showTime: showHour + ':' + showMin + ':' + showSec
+      });
+
+      if (remainTime <= 0) {
+        that.stopCountDown();
+      }
+    }, 1000); // 每隔1秒执行一次
+  },
+
+  stopCountDown: function () {
+    let that = this;
+    clearInterval(that.data.timer); // 清除计时器
+    wx.showToast({
+      title: '倒计时结束',
+      icon: 'none'
+    })
   },
 
   /**

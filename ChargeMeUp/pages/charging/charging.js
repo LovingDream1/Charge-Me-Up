@@ -6,8 +6,8 @@ Page({
    */
   data: {
     time: 0,
-    location1: Math.floor(Math.random()*10),
-    location2: Math.floor(Math.random()*40)
+    location1: 1+Math.floor(Math.random()*9),
+    location2: 1+Math.floor(Math.random()*40)
   },
 
   chargingtime(e) {

@@ -20,6 +20,13 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "linshi",
+          "pathName": "pages/tmp/tmp",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }
