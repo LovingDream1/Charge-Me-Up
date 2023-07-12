@@ -1,7 +1,0 @@
-<!--1.文本提示-->
-<view class="text1"><text>您的订单已完成:</text></view>
-<!-- 2.查看详情 -->
-<view class="botton"><button size="middle" bindtap="handleShowModal">查看详情</button></view>
-
-
-

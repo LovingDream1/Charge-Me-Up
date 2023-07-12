@@ -1,4 +1,0 @@
-/* pages/message/message.wxss */
-page {
-  background-color: #efefef;
-}
