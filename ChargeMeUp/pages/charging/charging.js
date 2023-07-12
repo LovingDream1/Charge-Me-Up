@@ -5,15 +5,21 @@ Page({
    * 页面的初始数据
    */
   data: {
-    time: 0
+    time: 0,
+    location1: Math.floor(Math.random()*10),
+    location2: Math.floor(Math.random()*40)
   },
 
   chargingtime(e) {
-    console.log(e);
-    let time = e.currentTarget.dataset.num.time;
-    wx.reLaunch({
-      url: '/pages/home/home?lasttime='+time,
-      success: ()=>{
+    console.log(e),
+    getApp().globalData.loc1 = this.data.location1,
+    getApp().globalData.loc2 = this.data.location2,
+    getApp().globalData.lasttime =e.currentTarget.dataset.time,
+    getApp().globalData.endTime = "2023-07-12 20:30:00", //结束时间"
+
+    wx.switchTab({
+      url: '/pages/home/home',
+      success: () => {
         console.log("成功");
       }
     })

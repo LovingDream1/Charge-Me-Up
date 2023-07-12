@@ -56,9 +56,9 @@
     <view class="location">
       <view class="item" style="width: 641rpx; height: 112rpx; display: flex; box-sizing: border-box">
         <view class="info">天赐庄本部</view>
-        <text class="num">1</text>
+        <text class="num">{{loc1}}</text>
         <view class="info">号桩</view>
-        <text class="num">1</text>
+        <text class="num">{{loc2}}</text>
         <view class="info">号充电位</view>
       </view>
     </view>

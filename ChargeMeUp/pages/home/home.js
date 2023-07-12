@@ -5,9 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-    endTime: "2023-07-12 10:30:00", //结束时间
+    endTime: "2023-07-12 16:40:00", //结束时间
     name1: "找充电桩",
-    name2: "个人账户"
+    name2: "个人账户",
+    loc1: getApp().globalData.loc1,
+    loc2: getApp().globalData.loc2,
+    time: getApp().globalData.time
   },
 
   /**
@@ -15,6 +18,11 @@ Page({
    */
   onLoad: function (options) {
     this.singleCountDown(); //页面加载时就启动定时器
+    this.setData({
+      loc1: getApp().globalData.loc1,
+      loc2: getApp().globalData.loc2,
+      time: getApp().globalData.time
+    })
   },
 
   /**
