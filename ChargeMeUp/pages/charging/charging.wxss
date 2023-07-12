@@ -1,4 +1,7 @@
 /* pages/charging/charging.wxss */
+page{
+  background-color: #efefef;
+}
 .word {
   width: 100%;
   height: 300rpx;
