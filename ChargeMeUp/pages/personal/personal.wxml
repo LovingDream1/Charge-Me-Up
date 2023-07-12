@@ -1,5 +1,21 @@
 <!--pages/personal/personal.wxml-->
 <view class = "personal-info">
+  <image class = "bk" src="/images/名片.png" mode="widthFix"/>
+  <image class = "head" src="/images/头像.png" mode="widthFix"/>
+  <image class = "seticon" src="/images/设置.png" mode="widthFix"/>
+  <view class = "money">
+    <view>账户余额</view>
+    <view class = "money-data">10.00</view>
+  </view>
+  <view class = "credit">
+    <view>信用度</view>
+    <view class = "credit-data">100</view>
+  </view>
+  <view class = "info">
+    <view><text>{{username}}</text></view>
+    
+    <text>{{id}}</text>
+  </view>
   
 </view>
 

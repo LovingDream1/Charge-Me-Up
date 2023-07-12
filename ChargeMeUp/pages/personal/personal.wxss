@@ -1,5 +1,55 @@
 /* pages/personal/personal.wxss */
 
+.bk{
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.head {
+  width: 90px;
+  position: absolute;
+  left: 40px;
+  top: 20px;
+}
+
+.money{
+  position: absolute;
+  left: 50px;
+  top: 120px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.credit{
+  position: absolute;
+  right: 60px;
+  top: 120px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.money-data{
+  font-weight: bold;
+}
+
+.credit-data{
+  font-weight: bold;
+}
+
+.seticon{
+  width: 30px;
+  position: absolute;
+  top: 30px;
+}
+
+.info{
+  position: absolute;
+  top: 30px;
+  left: 140px;
+  line-height: 30px;
+}
+
+
 .img-box {
   margin-left: 10rpx;
   margin-right: 10rpx;
