@@ -1,7 +1,18 @@
-<!--1.文本提示-->
-<view class="text1"><text>您的订单已完成:</text></view>
-<!-- 2.查看详情 -->
-<view class="botton"><button size="middle" bindtap="handleShowModal">查看详情</button></view>
+<view wx:if="{{hidden}}">
+  <view class="text1"><text>暂时没有消息通知~</text></view>
+  <view class="shijian">
+    <button wx:if="{{hidden}}" type="warn" style="width:400rpx" bindtap='xianshi'>电源意外拔出</button>
+  </view>
+</view>
 
-
-
+<view hidden='{{hidden}}'>
+  <view class="notice">
+    <view class="title">
+      <image src="/images/icon/注意.png"></image>
+      <text>拔出警告</text>
+    </view>
+    <text class="wenben">您在天赐庄本部{{loc1}}号充电桩{{loc2}}号充电位的电动车电源被提前拔出。</text>
+    <view class="botton"><button size="middle" bindtap="handleShowModal">查看详情</button></view>
+  </view>
+  <button style="margin-top: 25rpx;" type="warn" bindtap='yincang'>清空</button>
+</view>

@@ -1,23 +1,38 @@
 <!--pages/personal/personal.wxml-->
-<view class = "personal-info">
-  <image class = "bk" src="/images/名片.png" mode="widthFix"/>
-  <image class = "head" src="/images/头像.png" mode="widthFix"/>
-  <image class = "seticon" src="/images/设置.png" mode="widthFix"/>
-  <view class = "money">
+<view class="personal-info">
+  <image class="bk" src="/images/名片.png" mode="widthFix" />
+  <image class="head" src="/images/头像.png" mode="widthFix" />
+  <image class="seticon" src="/images/设置.png" mode="widthFix" />
+  <view class="money">
     <view>账户余额</view>
-    <view class = "money-data">10.00</view>
+    <view class="money-data">10.00</view>
   </view>
-  <view class = "credit">
+  <view class="credit">
     <view>信用度</view>
-    <view class = "credit-data">100</view>
+    <view class="credit-data">100</view>
   </view>
-  <view class = "info">
+  <view class="info">
     <view><text>{{username}}</text></view>
-    
+
     <text>{{id}}</text>
   </view>
-  
+
 </view>
+
+<view class="lunbo">
+  <swiper interval="2000" indicator-dots="true" autoplay="true" circular="true">
+    <swiper-item>
+      <image class="ima" src="https://img-blog.csdnimg.cn/5589ae9720df44fda0967faaa288a553.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBALeW4jOWGgC0=,size_20,color_FFFFFF,t_70,g_se,x_16"></image>
+    </swiper-item>
+    <swiper-item class="cri">
+      <image class="ima" src="https://img-blog.csdnimg.cn/5580029c6bed471487fe93983088cbae.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBALeW4jOWGgC0=,size_20,color_FFFFFF,t_70,g_se,x_16"></image>
+    </swiper-item>
+    <swiper-item>
+      <image class="ima" src="https://img-blog.csdnimg.cn/1472745c740d42caa002fb5b24b0069a.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBALeW4jOWGgC0=,size_20,color_FFFFFF,t_70,g_se,x_16"></image>
+    </swiper-item>
+  </swiper>
+</view>
+
 
 <view class="img-box">
   <navigator class="box-item" url="/pages/tmp/tmp?title={{name1}}">
@@ -25,7 +40,7 @@
     <text>账户充值</text>
   </navigator>
   <navigator class="box-item" url="/pages/tmp/tmp?title={{name2}}">
-    <image src='/images/icon/充值记录.png' ></image>
+    <image src='/images/icon/充值记录.png'></image>
     <text>充值记录</text>
   </navigator>
   <navigator class="box-item" url="/pages/tmp/tmp?title={{name3}}">

@@ -87,3 +87,18 @@
   margin-top: 10rpx;
   font-family: "隶书";
 }
+.lunbo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 200rpx;
+}
+swiper {
+  width: 720rpx;
+  height: 200rpx;
+}
+.ima {
+width: 720rpx;
+  height: 200rpx;
+}
