@@ -61,7 +61,7 @@
   border-left: 10rpx solid #efefef;
   border-bottom: 10rpx solid #efefef;
   box-sizing: border-box;
-  background-color: rgb(240, 252, 217);
+  background-color: rgb(253, 253, 253);
 }
 
 .box-item {

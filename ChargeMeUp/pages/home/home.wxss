@@ -2,20 +2,19 @@
 page{background-color: #ececec
 }
 .logo {
-  margin-left: 15rpx;
-  margin-right: 15rpx;
-  margin-top: 20rpx;
-  width: 96%;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  margin-top: 10rpx;
+  width: 97%;
   height: 250rpx;
   border-radius: 26px;
 }
 
 .title {
-  margin-left: 20rpx;
-  margin-right: 20rpx;
-  margin-top: 20rpx;
-  width: 95%;
-  height: 70rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  width: 97%;
+  height: 80rpx;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -33,27 +32,24 @@ page{background-color: #ececec
 .title text {
   margin-left: 10rpx;
   margin-top: 15rpx;
-  margin-bottom: 10rpx;
-  font-size: x-large;
+  margin-bottom: 15rpx;
+  font-size: 40rpx;
   font-family: "隶书";
   background-color: rgb(255, 255, 255);
 }
 
 .list-grid {
-  margin-left: 10rpx;
-  margin-right: 10rpx;
-  width: 97.5%;
-  margin-top: 10rpx;
+  width: 99.5%;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 10rpx solid #efefef;
   box-sizing: border-box;
-  background-color: rgb(240, 252, 217);
+  background-color: rgb(253, 253, 253);
 }
 
 .grid-item {
-  width: 30%;
+  width: 33%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,12 +72,11 @@ page{background-color: #ececec
 
 
 .charged {
-  margin-top: 10rpx;
   margin-bottom: 20rpx;
-  margin-left: 10rpx;
-  margin-right: 10rpx;
+  margin-left: rpx;
+  margin-right: 5rpx;
   border: 10rpx solid #efefef;
-  background-color: rgb(240, 252, 217);
+  background-color: rgb(255, 255, 255);
 }
 
 .title2 {
@@ -99,9 +94,9 @@ page{background-color: #ececec
 
 .title2 text {
   margin-top: 40rpx;
-  margin-bottom: 10rpx;
+  margin-bottom: 20rpx;
   margin-left: 20rpx;
-  font-size: 50rpx;
+  font-size: 45rpx;
   font-family: "华文新魏";
 }
 
