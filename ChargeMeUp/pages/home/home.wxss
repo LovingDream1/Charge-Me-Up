@@ -4,8 +4,10 @@ page{background-color: #ececec
 .logo {
   margin-left: 15rpx;
   margin-right: 15rpx;
+  margin-top: 20rpx;
   width: 96%;
   height: 250rpx;
+  border-radius: 25px;
 }
 
 .title {
@@ -71,6 +73,7 @@ page{background-color: #ececec
   margin-bottom: 20rpx;
   font-family: "隶书";
 }
+
 
 .charged {
   margin-top: 10rpx;
