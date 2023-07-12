@@ -13,7 +13,10 @@ App({
       }
     })
   },
+
   globalData: {
-    userInfo: null
+    userInfo: null,
+    username: "未绑定",
+    id: "未绑定"
   }
 })

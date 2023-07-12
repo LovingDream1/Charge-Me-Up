@@ -9,6 +9,7 @@ Page({
     username: [],
     id: [],
   },
+  
   inputname(e) {
     this.setData({
       username: e
@@ -60,6 +61,10 @@ Page({
     //   }
     // })
     else {
+      
+        getApp().globalData.username = this.data.username;
+        getApp().globalData.id = this.data.id;
+      
       wx.showToast({
         title: '绑定成功',
         icon: 'success',
