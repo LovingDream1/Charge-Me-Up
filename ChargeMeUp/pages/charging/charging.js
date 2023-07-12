@@ -6,19 +6,19 @@ Page({
    */
   data: {
     time: 0,
-    location1: 1+Math.floor(Math.random()*9),
-    location2: 1+Math.floor(Math.random()*40)
+    location1: 1 + Math.floor(Math.random() * 9),
+    location2: 1 + Math.floor(Math.random() * 40),
+    flag: ''
   },
 
   chargingtime(e) {
-    console.log(e),
-    getApp().globalData.loc1 = this.data.location1,
-    getApp().globalData.loc2 = this.data.location2,
-    getApp().globalData.lasttime =e.currentTarget.dataset.time,
-    getApp().globalData.endTime = "2023-07-12 20:30:00", //结束时间"
+    console.log(e);
+    getApp().globalData.loc1 = this.data.location1;
+    getApp().globalData.loc2 = this.data.location2;
+    getApp().globalData.time = e.currentTarget.dataset.time;
 
-    wx.switchTab({
-      url: '/pages/home/home',
+    wx.reLaunch({
+      url: '/pages/home/home?flag=1',
       success: () => {
         console.log("成功");
       }

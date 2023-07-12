@@ -1,4 +1,2 @@
 <!--pages/tmp/tmp.wxml-->
 <text>当前功能还未开发，敬请期待！</text>
-<button bindtap="countDown"> 1</button>
-<text>{{showtime}}</text>

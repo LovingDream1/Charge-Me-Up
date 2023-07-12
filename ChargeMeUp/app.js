@@ -15,9 +15,8 @@ App({
   },
   globalData: {
     userInfo: null,
-    lasttime: 0,
+    time: 0,
     loc1: 0,
-    loc2: 0,
-    endTime: "2023-07-12 20:30:00"
+    loc2: 0
   }
 })

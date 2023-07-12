@@ -40,9 +40,9 @@
 
     <view class="countdown">
       <view class="item" style="width: 641rpx; height: 116rpx; display: flex; box-sizing: border-box">
-        <view class="txt-time">{{txtTime.hou}}</view>
+        <view class="txt-time">{{h}}</view>
         <text class="units">h</text>
-        <view class="txt-time">{{txtTime.min}}</view>
+        <view class="txt-time">{{m}}</view>
         <text class="units">min</text>
       </view>
     </view>

@@ -10,19 +10,27 @@ Page({
     name2: "个人账户",
     loc1: getApp().globalData.loc1,
     loc2: getApp().globalData.loc2,
-    time: getApp().globalData.time
+    time: getApp().globalData.time,
+    remainTime: 60 * 60, // 剩余时间，默认1小时即3600秒
+    timer: null,
+    h: "00",
+    m: "00"
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.singleCountDown(); //页面加载时就启动定时器
     this.setData({
       loc1: getApp().globalData.loc1,
       loc2: getApp().globalData.loc2,
-      time: getApp().globalData.time
-    })
+      time: getApp().globalData.time,
+    });
+    this.data.remainTime = this.data.time * 3600;
+    console.log(options);
+    if (options.flag == '1') {
+      this.countDown();
+    }
   },
 
   /**
@@ -74,53 +82,57 @@ Page({
 
   },
 
-  //时间显示小于10的格式化函数
-  timeFormat(param) {
-    return param < 10 ? '0' + param : param;
+  countDown: function () {
+    let that = this;
+    let remainTime = that.data.remainTime;
+
+    that.data.timer = setInterval(function () {
+      remainTime--;
+      let hour = parseInt(remainTime / 3600);
+      let min = parseInt((remainTime - hour * 3600) / 60);
+      let sec = remainTime - hour * 3600 - min * 60;
+
+      // 格式化显示的时间
+      let showHour = hour < 10 ? '0' + hour : hour;
+      let showMin = min < 10 ? '0' + min : min;
+      let showSec = sec < 10 ? '0' + sec : sec;
+
+      that.setData({
+        showTime: showHour + ' H ' + showMin + ' M ' + showSec + ' S ',
+        h: showHour,
+        m: showMin
+      });
+
+      if (remainTime <= 0) {
+        that.stopCountDown();
+      }
+    }, 1000); // 每隔1秒执行一次
   },
-  //倒计时
-  singleCountDown: function () {
-    var that = this;
-    var time = 0;
-    var obj = {};
-    var endTime = new Date(that.data.endTime.replace(/-/g, "/")).getTime(); //结束时间时间戳
-    var currentTime = new Date().getTime(); //当前时间时间戳
-    time = (endTime - currentTime) / 1000;
-    // 如果活动未结束
-    if (time > 0) {
-      var hou = parseInt(time / (60 * 60));
-      var min = parseInt(time % (60 * 60 * 24) % 3600 / 60);
-      obj = {
-        hou: that.timeFormat(hou),
-        min: that.timeFormat(min)
-      }
-    } else { //活动已结束
-      obj = {
-        hou: "00",
-        min: "00"
-      }
-      clearTimeout(that.data.timeIntervalSingle); //清除定时器
-    }
-    var timeIntervalSingle = setTimeout(that.singleCountDown, 1000);
-    that.setData({
-      timeIntervalSingle,
-      txtTime: obj,
+
+  stopCountDown: function () {
+    let that = this;
+    clearInterval(that.data.timer); // 清除计时器
+    wx.showToast({
+      title: '充电已结束',
+      icon: 'none'
     })
   },
   getScancode: function () {
 
-    var _this = this;
-    // 允许从相机和相册扫码
-    wx.scanCode({
-      success: (res) => {
-        var SampleBarcode = res.result;
+    // var _this = this;
+    // // 允许从相机和相册扫码
+    // wx.scanCode({
+    //   success: (res) => {
+    //     var SampleBarcode = res.result;
 
-        _this.setData({
-          SampleBarcode: SampleBarcode,
+    //     _this.setData({
+    //       SampleBarcode: SampleBarcode,
 
-        })
-      }
+    //     })
+    //   }
+    // })
+    wx.navigateTo({
+      url: '/pages/charging/charging',
     })
   }
 })
-
