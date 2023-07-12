@@ -7,7 +7,7 @@ page{background-color: #ececec
   margin-top: 20rpx;
   width: 96%;
   height: 250rpx;
-  border-radius: 25px;
+  border-radius: 26px;
 }
 
 .title {
