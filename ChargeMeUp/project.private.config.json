@@ -13,6 +13,13 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "扫码页面",
+          "pathName": "pages/charging/charging",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }

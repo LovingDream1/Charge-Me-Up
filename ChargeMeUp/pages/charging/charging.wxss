@@ -1,0 +1,25 @@
+/* pages/charging/charging.wxss */
+.word {
+  width: 100%;
+  height: 300rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60rpx;
+  font-family: "华文新魏";
+}
+.menu {
+  margin-top: 10rpx;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.menu button {
+  margin-top: 50rpx;
+  background-color: #6EBEC7;
+  color: #fff;
+  border-bottom: 10rpx solid #efefef;
+  border-left: 10rpx solid #efefef;
+}
+

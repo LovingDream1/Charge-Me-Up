@@ -4,7 +4,8 @@
     "pages/message/message",
     "pages/personal/personal",
     "pages/tmp/tmp",
-    "pages/bindAccount/bindAccount"
+    "pages/bindAccount/bindAccount",
+    "pages/charging/charging"
   ],
   "window": {
     "backgroundTextStyle": "light",
