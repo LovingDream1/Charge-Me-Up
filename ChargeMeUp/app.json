@@ -1,9 +1,11 @@
 {
   "pages": [
+    "pages/login/login",
     "pages/home/home",
     "pages/message/message",
     "pages/personal/personal",
     "pages/tmp/tmp",
+
     "pages/bindAccount/bindAccount",
     "pages/charging/charging"
   ],
