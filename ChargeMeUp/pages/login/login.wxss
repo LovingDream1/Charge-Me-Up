@@ -55,9 +55,9 @@
   height: 200rpx;
   margin-bottom: 25rpx;
 }
- .container.title{
+ /*.container.title{
    font-family: "";
- }
+ }*/
 .content1{
   /* text-align: center; */
   display: flex;
