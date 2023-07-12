@@ -117,6 +117,8 @@ Page({
       icon: 'none'
     })
   },
+
+  // 扫码充电
   getScancode: function () {
 
     // var _this = this;
@@ -131,8 +133,43 @@ Page({
     //     })
     //   }
     // })
-    wx.navigateTo({
-      url: '/pages/charging/charging',
-    })
+    if (getApp().globalData.id == '未绑定') {
+      wx.showModal({
+        title: '学生信息还未绑定', //提示的标题
+        content: '您的学生信息还未与账号绑定，请先通过个人账户功能绑定相关信息。', //提示的内容
+        showCancel: false,
+        confirmText: '返回', //确定的按钮
+        success: function (res) {
+          if (res.confirm) {
+            console.log('用户点击了确定');
+            getApp().globalData.loc1 = 0;
+            getApp().globalData.loc2 = 0;
+            wx.reLaunch({
+              url: '/pages/home/home?flag=2',
+            })
+          } else if (res.cancel) {
+            console.log('用户点击了取消')
+          }
+        }
+      })
+    } else if (getApp().globalData.loc1 != 0) {
+      wx.showModal({
+        title: '重复扫描', //提示的标题
+        content: '你的电动车正在此处充电，请耐心等待，不要重复扫码。', //提示的内容
+        showCancel: false,
+        confirmText: '返回', //确定的按钮
+        success: function (res) {
+          if (res.confirm) {
+            console.log('用户点击了确认')
+          } else if (res.cancel) {
+            console.log('用户点击了取消')
+          }
+        }
+      })
+    } else {
+      wx.navigateTo({
+        url: '/pages/charging/charging',
+      })
+    }
   }
 })
