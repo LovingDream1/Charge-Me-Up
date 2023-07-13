@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    query: [],
+    query: '',
     username: '',
     id: '',
   },
@@ -80,9 +80,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    this.setData({
-      query: options
-    })
+    console.log(options);
+    // this.setData({
+    //   query: options.title
+    // })
   },
 
   /**
@@ -90,7 +91,7 @@ Page({
    */
   onReady() {
     wx.setNavigationBarTitle({
-      title: this.data.query.title,
+      title: '账号绑定'
     })
   },
 

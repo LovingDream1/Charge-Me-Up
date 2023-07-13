@@ -1,6 +1,10 @@
 /* pages/home/home.wxss */
+<<<<<<< HEAD
 page{
   background-color: #fff
+=======
+page{background-color: #fff
+>>>>>>> f3d221452db9c160db21e88d609ed3829acbeb7b
 }
 .logo {
   margin-left: 10rpx;
@@ -12,6 +16,7 @@ page{
 }
 
 .title {
+  border-radius: 30rpx;
   margin-left: 10rpx;
   margin-right: 10rpx;
   width: 97%;
@@ -19,7 +24,9 @@ page{
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: rgb(253, 253, 253);
+  background-color: #fff;
+  /* background: linear-gradient(to right, #b5fce4, #97fad9,#cefffb); */
+
 }
 
 .title image {
@@ -35,11 +42,11 @@ page{
   margin-top: 15rpx;
   margin-bottom: 15rpx;
   font-size: 40rpx;
-  font-family: "隶书";
-  background-color: rgb(255, 255, 255);
+  font-family: "隶书"
 }
 
 .list-grid {
+  border-radius: 50rpx;
   width: 99.5%;
   display: flex;
   justify-content: center;
@@ -47,6 +54,7 @@ page{
   border: 10rpx solid #efefef;
   box-sizing: border-box;
   background-color: rgb(253, 253, 253);
+  background: linear-gradient(to right, #e4f3ae, #c6ee99);
 }
 
 .grid-item {
@@ -73,11 +81,13 @@ page{
 
 
 .charged {
+  border-radius: 50rpx;
   margin-bottom: 20rpx;
   margin-left: rpx;
   margin-right: 5rpx;
   border: 10rpx solid #efefef;
   background-color: rgb(255, 255, 255);
+  background: linear-gradient(to right, #e4f3ae, #c6ee99);
 }
 
 .title2 {

@@ -18,10 +18,10 @@
       <image src="/images/icon/找充电桩.png"></image>
       <text>找充电桩</text>
     </navigator>
-    <navigator class="grid-item" url="/pages/bindAccount/bindAccount?title={{name2}}">
+    <view class="grid-item" bindtap="bindAccount">
       <image src="/images/icon/账户.png"></image>
       <text>个人账户</text>
-    </navigator>
+    </view>
   </view>
 </view>
 
