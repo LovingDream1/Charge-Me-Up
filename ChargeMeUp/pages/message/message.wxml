@@ -1,3 +1,4 @@
+<!-- 空页面提示文字 -->
 <view wx:if="{{hidden}}">
   <view class="text1"><text>暂时没有消息通知~</text></view>
   <view class="shijian">
@@ -5,6 +6,7 @@
   </view>
 </view>
 
+<!-- 时间触发信息栏 -->
 <view hidden='{{hidden}}'>
   <view class="notice">
     <view class="title">

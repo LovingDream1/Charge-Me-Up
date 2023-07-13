@@ -1,16 +1,19 @@
 <!--pages/login/login.wxml-->
+<!-- 登录界面 -->
 <view class="container">
+  <!-- 图标 -->
   <image src="/images/1.png "></image>
+  <!-- 软件名 -->
   <text class="title">Charge Me Up</text>
+  <!-- 输入框 -->
   <view class="inputRow">
     <View>账号</View>
     <input type="text" model:value="{{userName}}" placeholder="请输入账号" class="phone_number"></input>
   </view>
-  <!-- <view class="divLine"></view> -->
   <view class="inputRow1">
     <View>密码</View>
     <input type="text" model:value="{{userPass}}" placeholder="请输入密码" class="phone_number"></input>
   </view>
-  <!-- <view class="divLine"></view> -->
+  <!-- 登录按钮 -->
   <button class="buttonStyle" type="primary" bindtap="login">登录</button>
 </view>

@@ -7,17 +7,20 @@
   <image src="/images/分页符.png"></image>
   <text>功能速览</text>
 </view>
-
+<!-- 功能按钮 -->
 <view>
   <view class="list-grid">
+    <!-- 扫码充电 -->
     <view class="grid-item" bindtap="getScancode">
       <image src="/images/icon/扫码充电.png"></image>
       <text>扫码充电</text>
     </view>
-    <navigator class="grid-item" url="/pages/tmp/tmp?title={{name1}}" >
+    <!-- 找充电桩 -->
+    <navigator class="grid-item" url="/pages/tmp/tmp?title={{name1}}">
       <image src="/images/icon/找充电桩.png"></image>
       <text>找充电桩</text>
     </navigator>
+    <!-- 个人账户 -->
     <view class="grid-item" bindtap="bindAccount">
       <image src="/images/icon/账户.png"></image>
       <text>个人账户</text>
@@ -33,11 +36,12 @@
 
 <view>
   <view class="charged">
+    <!-- 提示文字 -->
     <view class="title2">
       <image src="/images/时间.png"></image>
       <text>剩余充电时间</text>
     </view>
-
+    <!-- 倒计时 -->
     <view class="countdown">
       <view class="item" style="width: 641rpx; height: 116rpx; display: flex; box-sizing: border-box">
         <view class="txt-time">{{h}}</view>
@@ -47,12 +51,12 @@
       </view>
     </view>
 
-
+    <!-- 提示文字 -->
     <view class="title2" style="width: 570rpx; height: 112rpx; display: flex; box-sizing: border-box">
       <image src="/images/位置.png"></image>
       <text>充电桩位置</text>
     </view>
-
+    <!-- 位置信息 -->
     <view class="location">
       <view class="item" style="width: 641rpx; height: 112rpx; display: flex; box-sizing: border-box">
         <view class="info">天赐庄本部</view>

@@ -1,7 +1,9 @@
 /* pages/charging/charging.wxss */
-page{
+page {
   background-color: #efefef;
 }
+
+/* 文本样式 */
 .word {
   width: 100%;
   height: 300rpx;
@@ -11,6 +13,8 @@ page{
   font-size: 60rpx;
   font-family: "华文新魏";
 }
+
+/* 选择界面 */
 .menu {
   margin-top: 10rpx;
   justify-content: center;
@@ -18,6 +22,7 @@ page{
   box-sizing: border-box;
 }
 
+/* 选择按钮 */
 .menu button {
   margin-top: 50rpx;
   background-color: #6EBEC7;
@@ -25,4 +30,3 @@ page{
   border-bottom: 10rpx solid #efefef;
   border-left: 10rpx solid #efefef;
 }
-

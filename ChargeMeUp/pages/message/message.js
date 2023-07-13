@@ -19,8 +19,8 @@ Page({
             success: function (res) {
               if (res.confirm) {
                 console.log('用户点击了确定');
-                getApp().globalData.loc1=0;
-                getApp().globalData.loc2=0;
+                getApp().globalData.loc1 = 0;
+                getApp().globalData.loc2 = 0;
                 wx.reLaunch({
                   url: '/pages/home/home?flag=2',
                 })
@@ -95,7 +95,7 @@ Page({
     hidden: true,
     loc1: getApp().globalData.loc1,
     loc2: getApp().globalData.loc2,
-    time:''
+    time: ''
   },
 
   /**

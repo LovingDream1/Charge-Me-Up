@@ -192,7 +192,7 @@ Page({
       wx.navigateTo({
         url: '/pages/bindAccount/bindAccount'
       })
-    }else{
+    } else {
       // 重复绑定处理
       wx.showModal({
         title: '重复绑定', //提示的标题

@@ -19,7 +19,7 @@ Page({
       username: e.detail.value
     })
   },
-  
+
   /**
    * 读取输入的学生学号
    * @param {Object} e 学生学号 
@@ -72,7 +72,6 @@ Page({
     //     //console.log('请求失败：', error);
     //   }
     // })
-
     else {
       // 同步全局变量学生姓名与学号
       getApp().globalData.username = this.data.username;

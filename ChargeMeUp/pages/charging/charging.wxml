@@ -1,6 +1,9 @@
 <!--pages/charging/charging.wxml-->
+<!-- 充电时间选择界面 -->
 <view>
+  <!-- 文本 -->
   <text class="word">请选择你要充电的时间：</text>
+  <!-- 菜单 -->
   <view class="menu">
     <button data-time="{{0.5}}" bindtap="chargingtime">0.5h</button>
     <button data-time="{{1}}" bindtap="chargingtime">1h</button>

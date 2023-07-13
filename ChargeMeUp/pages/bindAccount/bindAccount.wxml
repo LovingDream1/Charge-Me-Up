@@ -2,14 +2,14 @@
 <!-- 输入框 -->
 <view class="form-here">
   <!-- 姓名输入框 -->
-  <input class="form-account" placeholder="请输入学生姓名" bindinput="inputname"/>
+  <input class="form-account" placeholder="请输入学生姓名" bindinput="inputname" />
   <view class="hr"></view>
   <!-- 学号输入框 -->
-  <input class="form-password" placeholder="请输入学号" bindinput="inputid"/>
+  <input class="form-password" placeholder="请输入学号" bindinput="inputid" />
   <view class="hr" style="margin-top:5px;"></view>
+</view>
 
 <!-- 提交按钮 -->
-</view>
 <view class="submit">
   <button class="sub-button" bindtap="confirmInfo">确认绑定</button>
 </view>

@@ -1,16 +1,18 @@
 /* pages/bindAccount/bindAccount.wxss */
-/*form  */
 
+/*form  */
 .form-here {
   margin-top: 10px;
   background-color: #ffffff;
   padding: 20px 30px;
 }
 
+/* 输入框 */
 .form-password {
   margin-top: 20px;
 }
 
+/* 提交 */
 .submit {
   margin-top: 30px;
   display: flex;
@@ -18,6 +20,7 @@
   height: 100rpx;
 }
 
+/* 提交按钮 */
 .sub-button {
   background-color: #0398e7;
   color: #ffffff;

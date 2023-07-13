@@ -3,26 +3,30 @@ page {
   background-color: #efefef;
 }
 
-.text1{
+/* 空页面提示信息 */
+.text1 {
   height: 100rpx;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.text1 text{
+.text1 text {
   font-family: "楷体";
-  font-weight:bolder;
+  font-weight: bolder;
   font-size: 50rpx;
 }
-.shijian{
+
+/* 事件触发按钮 */
+.shijian {
   width: 10%;
   position: absolute;
   bottom: 50rpx;
-  right:300rpx
+  right: 300rpx
 }
 
-.notice{
+/* 消息简介 */
+.notice {
   margin-top: 20rpx;
   margin-left: 20rpx;
   border-radius: 30rpx;
@@ -34,25 +38,27 @@ page {
   height: 300rpx;
   width: 700rpx;
 }
-.title{
+
+.title {
   margin-right: 450rpx;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.title image{
+
+.title image {
   height: 50rpx;
   width: 50rpx;
 }
 
-.title text{
+.title text {
   margin-top: 5rpx;
   margin-left: 10rpx;
   font-size: large;
   font-family: "黑体";
 }
 
-.notice .wenben{
+.notice .wenben {
   margin-left: 20rpx;
   margin-right: 20rpx;
   font-size: 30rpx;
