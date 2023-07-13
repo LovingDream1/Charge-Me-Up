@@ -11,12 +11,16 @@ Page({
     flag: ''
   },
 
+  /**
+   * 
+   * @param {Object} e 位置信息与充电时长
+   */
   chargingtime(e) {
     console.log(e);
     getApp().globalData.loc1 = this.data.location1;
     getApp().globalData.loc2 = this.data.location2;
     getApp().globalData.time = e.currentTarget.dataset.time;
-
+    // 跳转回主页
     wx.reLaunch({
       url: '/pages/home/home?flag=1',
       success: () => {

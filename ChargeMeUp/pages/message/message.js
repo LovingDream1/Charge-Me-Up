@@ -1,5 +1,8 @@
 // pages/message/message.js
 Page({
+  /**
+   * 异常信息查看详情
+   */
   handleShowModal() {
     wx.showModal({
       title: '电源提前拔出', //提示的标题
@@ -50,16 +53,21 @@ Page({
     })
   },
 
-  // 隐藏
-  yincang: function (e) {
+  /**
+   * 隐藏异常信息
+   */
+  yincang: function () {
     setTimeout(function () {
       this.setData({
         hidden: true
       })
     }.bind(this), )
   },
-  // 显示
-  xianshi: function (e) {
+
+  /**
+   * 显示异常信息
+   */
+  xianshi: function () {
     var date = new Date()
     var year = date.getFullYear()
     var month = date.getMonth() + 1

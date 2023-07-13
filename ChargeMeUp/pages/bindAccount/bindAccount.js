@@ -10,20 +10,31 @@ Page({
     id: '',
   },
 
+  /**
+   * 读取输入的学生姓名
+   * @param {Object} e 学生姓名 
+   */
   inputname(e) {
     this.setData({
       username: e.detail.value
     })
-
   },
-
+  
+  /**
+   * 读取输入的学生学号
+   * @param {Object} e 学生学号 
+   */
   inputid(e) {
     this.setData({
       id: e.detail.value
     })
   },
 
+  /**
+   * 点击确认按钮后执行内容
+   */
   confirmInfo() {
+    // 若输入为空
     if (this.data.username == '' || this.data.id == '') {
       wx.showToast({
         title: '绑定失败',
@@ -61,10 +72,13 @@ Page({
     //     //console.log('请求失败：', error);
     //   }
     // })
+
     else {
+      // 同步全局变量学生姓名与学号
       getApp().globalData.username = this.data.username;
       getApp().globalData.id = this.data.id;
       console.log(getApp().globalData.username);
+      // 弹窗显示
       wx.showToast({
         title: '绑定成功',
         icon: 'success',

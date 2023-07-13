@@ -21,6 +21,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    // 同步全局数据充电位置与充电时长
     this.setData({
       loc1: getApp().globalData.loc1,
       loc2: getApp().globalData.loc2,
@@ -28,6 +29,7 @@ Page({
     });
     this.data.remainTime = this.data.time * 3600;
     console.log(options);
+    // 执行倒计时
     if (options.flag == '1') {
       this.countDown();
     }
@@ -82,6 +84,9 @@ Page({
 
   },
 
+  /**
+   * 倒计时功能实现
+   */
   countDown: function () {
     let that = this;
     let remainTime = that.data.remainTime;
@@ -118,7 +123,9 @@ Page({
     })
   },
 
-  // 扫码充电
+  /**
+   * 扫码充电功能跳转
+   */
   getScancode: function () {
 
     // var _this = this;
@@ -133,6 +140,8 @@ Page({
     //     })
     //   }
     // })
+
+    // 未绑定学生信息
     if (getApp().globalData.id == '未绑定') {
       wx.showModal({
         title: '学生信息还未绑定', //提示的标题
@@ -153,6 +162,7 @@ Page({
         }
       })
     } else if (getApp().globalData.loc1 != 0) {
+      // 重复扫码处理
       wx.showModal({
         title: '重复扫描', //提示的标题
         content: '你的电动车正在此处充电，请耐心等待，不要重复扫码。', //提示的内容
@@ -172,12 +182,18 @@ Page({
       })
     }
   },
+
+  /**
+   * 账号绑定
+   */
   bindAccount() {
+    // 未绑定则跳转至绑定页面
     if (getApp().globalData.id == "未绑定") {
       wx.navigateTo({
         url: '/pages/bindAccount/bindAccount'
       })
     }else{
+      // 重复绑定处理
       wx.showModal({
         title: '重复绑定', //提示的标题
         content: '你已绑定学生信息，请勿重复绑定。', //提示的内容

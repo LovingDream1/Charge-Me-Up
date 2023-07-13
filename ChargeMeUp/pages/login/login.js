@@ -11,7 +11,9 @@ Page({
     userPass:"",
   },
  
-  /* 登录校验操作 */
+  /**
+   * 登陆检验操作
+   */
   login: function () {
     if (this.data.userName === "student" && this.data.userPass === "123123") {
       wx.reLaunch({
