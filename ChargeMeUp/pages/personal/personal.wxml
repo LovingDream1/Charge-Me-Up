@@ -22,13 +22,13 @@
 <view class="lunbo">
   <swiper interval="2000" indicator-dots="true" autoplay="true" circular="true">
     <swiper-item>
-      <image class="ima" src="/images/lunbo1.webp"></image>
+      <image class="ima" src="/images/lunbo1.jpg"></image>
     </swiper-item>
     <swiper-item class="cri">
-      <image class="ima" src="/images/lunbo2.webp"></image>
+      <image class="ima" src="/images/lunbo2.jpg"></image>
     </swiper-item>
     <swiper-item>
-      <image class="ima" src="/images/lunbo3.webp"></image>
+      <image class="ima" src="/images/lunbo3.jpg"></image>
     </swiper-item>
   </swiper>
 </view>
