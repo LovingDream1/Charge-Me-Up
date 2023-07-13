@@ -1,5 +1,6 @@
 /* pages/home/home.wxss */
-page{background-color: #ececec
+page{
+  background-color: #fff
 }
 .logo {
   margin-left: 10rpx;
