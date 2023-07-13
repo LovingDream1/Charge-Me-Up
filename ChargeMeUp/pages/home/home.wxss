@@ -1,5 +1,7 @@
 /* pages/home/home.wxss */
-page{background-color: #fff
+
+page{
+  background-color: #fff
 }
 .logo {
   margin-left: 10rpx;
@@ -30,6 +32,7 @@ page{background-color: #fff
   margin-bottom: 20rpx;
   width: 3%;
   height: 50rpx;
+  border-radius: 30rpx;
 }
 
 .title text {
