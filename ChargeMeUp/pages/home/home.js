@@ -171,5 +171,26 @@ Page({
         url: '/pages/charging/charging',
       })
     }
+  },
+  bindAccount() {
+    if (getApp().globalData.id == "未绑定") {
+      wx.navigateTo({
+        url: '/pages/bindAccount/bindAccount'
+      })
+    }else{
+      wx.showModal({
+        title: '重复绑定', //提示的标题
+        content: '你已绑定学生信息，请勿重复绑定。', //提示的内容
+        showCancel: false,
+        confirmText: '返回', //确定的按钮
+        success: function (res) {
+          if (res.confirm) {
+            console.log('用户点击了确认')
+          } else if (res.cancel) {
+            console.log('用户点击了取消')
+          }
+        }
+      })
+    }
   }
 })
