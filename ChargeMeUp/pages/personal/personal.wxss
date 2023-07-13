@@ -92,13 +92,13 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 200rpx;
+  height: 300rpx;
 }
 swiper {
   width: 720rpx;
-  height: 200rpx;
+  height: 300rpx;
 }
 .ima {
 width: 720rpx;
-  height: 200rpx;
+  height: 300rpx;
 }

@@ -32,6 +32,7 @@ page{
   margin-bottom: 20rpx;
   width: 3%;
   height: 50rpx;
+  border-radius: 30rpx;
 }
 
 .title text {
